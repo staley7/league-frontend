@@ -16,7 +16,7 @@ export function  updateLeague(league) {
 }
 
 export function  createLeague(league) {
-    return axios.post(url+"league", league);
+    return (axios.post(url+"league", league)).data;
 }
 
 export function deleteLeague(leagueId){
